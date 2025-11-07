@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupuaçu - O Tesouro da Amazônia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9f4; /* Fundo suave, cor da polpa clara */
+        }
+        .bg-cupuacu {
+            background-color: #a45a16; /* Cor terrosa, remetendo à casca */
+        }
+        .text-cupuacu {
+            color: #a45a16;
+        }
+        .btn-cupuacu {
+            background-color: #ffd100; /* Amarelo vibrante da polpa */
+            color: #4e342e; /* Marrom escuro */
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-cupuacu:hover {
+            background-color: #e5b800;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e0e0e0;
+        }
+        .fruit-image {
+            object-fit: cover;
+            border-radius: 8px;
+            width: 100%;
+            height: 250px;
+        }
+        .founder-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%; /* Imagens redondas */
+            border: 3px solid #ffd100; /* Borda amarela */
+            margin: 0 auto 15px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-cupuacu text-white py-12 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-1">CUPUAÇU</h1>
+            <p class="text-xl italic font-light mb-3">Theobroma grandiflorum — O Tesouro da Amazônia</p>
+            <!-- INCLUSÃO DA COOPERATIVA NO CABEÇALHO --><p class="text-2xl font-semibold mt-4 py-2 px-4 inline-block bg-white text-cupuacu rounded-full shadow-md">
+                AMAZOCUPU - Cooperativa de Produtores
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        
+        <!-- Seção 1: Introdução --><section class="mb-12">
+            <h2 class="text-3xl font-bold text-cupuacu mb-6 border-b pb-2">O que é o Cupuaçu?</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="card p-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        O cupuaçu é uma fruta nativa da Amazônia, pertencente à mesma família do cacau (Malvaceae), sendo cientificamente conhecido como Theobroma grandiflorum. É amplamente cultivado no Pará, Amazonas, e em outras regiões do Norte do Brasil. A fruta possui uma casca dura e marrom, mas o verdadeiro tesouro está em seu interior: uma polpa branca, cremosa, de aroma intenso e sabor único, que combina toques ácidos e doces.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        Seu nome deriva do tupi kupu'wasu, que significa "fruta grande".
+                    </p>
+                </div>
+                <div>
+                    <!-- Placeholder de imagem de um cupuaçu inteiro --><img src="https://placehold.co/600x400/a45a16/ffffff?text=CUPUAÇU" alt="Fruto inteiro de Cupuaçu" class="fruit-image shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Características e Usos --><section class="mb-12">
+            <h2 class="text-3xl font-bold text-cupuacu mb-6 border-b pb-2">Características e Versatilidade</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Card Polpa --><div class="card p-6">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-3">Polpa Deliciosa</h3>
+                    <p class="text-gray-700">A polpa do cupuaçu é a parte mais utilizada. Seu sabor exótico é a base para sucos, sorvetes, mousses, geleias e doces. É altamente aromática e nutritiva.</p>
+                </div>
+                
+                <!-- Card Semente (Cupulate) --><div class="card p-6">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-3">Cupulate e Manteiga</h3>
+                    <p class="text-gray-700">As sementes são processadas para produzir o Cupulate, um produto semelhante ao chocolate, mas sem a teobromina do cacau. A manteiga de cupuaçu é muito valorizada na indústria cosmética.</p>
+                </div>
+                
+                <!-- Card Sustentabilidade --><div class="card p-6">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-3">Cultivo Sustentável</h3>
+                    <p class="text-gray-700">O cupuaçuzeiro (a árvore) é cultivado de forma ecologicamente correta em sistemas agroflorestais, contribuindo para a preservação da biodiversidade amazônica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Benefícios para a Saúde --><section class="mb-12">
+            <h2 class="text-3xl font-bold text-cupuacu mb-6 border-b pb-2">Nutrição e Saúde</h2>
+            <div class="card p-6">
+                <p class="text-lg font-medium text-gray-800 mb-4">O cupuaçu é uma potência nutricional, conhecido por ser rico em:</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                        <li>Vitamina C: Importante para o sistema imunológico.</li>
+                        <li>Vitamina do Complexo B: Essenciais para o metabolismo energético.</li>
+                    </ul>
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                        <li>Fósforo e Ferro: Minerais vitais para ossos e transporte de oxigênio.</li>
+                        <li>Fibras: Auxiliam na digestão e saúde intestinal.</li>
+                    </ul>
+                    <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                        <li>Antioxidantes (Polifenóis): Auxiliam no combate aos radicais livres e promovem a saúde celular.</li>
+                        <li>Alto Teor de Gorduras Boas: Presentes na manteiga de cupuaçu.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Fitossanidade --><section class="mb-12">
+            <h2 class="text-3xl font-bold text-red-700 mb-6 border-b pb-2">⚠️ Fitossanidade: Doenças e Pragas do Cupuaçuzeiro</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                O manejo fitossanitário é fundamental para garantir a produtividade e a qualidade do fruto, pois a cultura do cupuaçu é vulnerável a alguns agentes patogênicos e insetos.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Doenças --><div class="card p-6 border-red-300 border-2">
+                    <h3 class="text-2xl font-bold text-red-700 mb-4">Doenças Principais</h3>
+                    <ul class="space-y-4">
+                        <li class="border-b pb-2">
+                            <strong class="text-lg">Vassoura-de-Bruxa</strong> (Fungo: *Moniliophthora perniciosa*):
+                            <p class="text-sm text-gray-600 mt-1">É a doença mais devastadora, podendo causar perdas de até 100%. Ataca ramos (que secam), flores e frutos (que apodrecem internamente). O controle é feito principalmente por **poda fitossanitária** rigorosa e uso de cultivares resistentes.</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <strong class="text-lg">Morte Progressiva</strong> (Fungo: *Lasiodiplodia theobromae*):
+                            <p class="text-sm text-gray-600 mt-1">Pode levar a planta à morte em casos severos. Sua incidência está associada ao manejo e condições climáticas.</p>
+                        </li>
+                        <li class="pb-2">
+                            <strong class="text-lg">Podridão Vermelha</strong> (Fungo: *Ganoderma philippii*):
+                            <p class="text-sm text-gray-600 mt-1">Infeta o sistema radicular. O controle envolve evitar plantios em áreas encharcadas e eliminar materiais vegetais doentes.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pragas --><div class="card p-6 border-green-300 border-2">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Principais Pragas</h3>
+                    <ul class="space-y-4">
+                        <li class="border-b pb-2">
+                            <strong class="text-lg">Broca-do-Fruto</strong> (*Conotrachelus sp.*):
+                            <p class="text-sm text-gray-600 mt-1">Larva que se desenvolve no interior do fruto, tornando-o impróprio para comercialização e consumo, causando grandes perdas na produção.</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <strong class="text-lg">Besouro</strong> (*Costalamaita ferruginea*):
+                            <p class="text-sm text-gray-600 mt-1">Ataca mudas jovens, perfurando as folhas e prejudicando o desenvolvimento inicial da planta. Exige controle químico periódico no viveiro.</p>
+                        </li>
+                        <li class="pb-2">
+                            <strong class="text-lg">Formiga Saúva</strong> (*Atta sp.*) e **Gafanhoto** (*Schistocerca spp.*):
+                            <p class="text-sm text-gray-600 mt-1">Ambos atacam as plantas, principalmente na fase de viveiro, necessitando de controle com iscas e defensivos específicos.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO: Nossos Fundadores --><section class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-cupuacu mb-8 border-b pb-2">Nossos Fundadores</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                A **AMAZOCUPU** foi fundada por um grupo de produtores apaixonados e visionários, dedicados a trazer o melhor do cupuaçu da Amazônia para o mundo. Conheça um pouco de quem faz isso acontecer:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                
+                <!-- Fundador 1 --><div class="card p-5">
+                    <img src="./img/Captura de tela 2025-11-07 144502.png" alt="Foto do Fundador 1" class="founder-img">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-2">Mateus Oliveira</h3>
+                    <p class="text-sm text-gray-600">Analista Ambiental e Tecnologia</p>
+                </div>
+
+                <!-- Fundador 2 --><div class="card p-5">
+                    <img src="./img/rodrigo.png" alt="Foto do Fundador 2" class="founder-img">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-2">Rodrigo Morais </h3>
+                    <p class="text-sm text-gray-600">Engenheiro agrônomo</p>
+                </div>
+
+                <!-- Fundador 3 --><div class="card p-5">
+                    <img src="img/vanderson.png" alt="Foto do Fundador 3" class="founder-img">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-2">Vanderson Silva</h3>
+                    <p class="text-sm text-gray-600">Engenheiro agrônomo </p>
+                </div>
+
+                <!-- Fundador 4 --><div class="card p-5">
+                    <img src="./img/ludmila.png" alt="Foto do Fundador 4" class="founder-img">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-2">Ludimila Xavier</h3>
+                    <p class="text-sm text-gray-600">Marketing e valorização cultural</p>
+                </div>
+
+                <!-- Fundador 5 --><div class="card p-5">
+                    <img src="./img/alice.png" alt="Foto do Fundador 5" class="founder-img">
+                    <h3 class="text-xl font-semibold text-cupuacu mb-2">Alicestefani Lima</h3>
+                    <p class="text-sm text-gray-600">Gestor Financeiro</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Seção 6: Botão de Ação Interativa (Demonstração JS) --><section class="text-center mt-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Descubra mais receitas!</h2>
+            <button id="recipeButton" class="btn-cupuacu py-3 px-8 rounded-full font-bold uppercase text-lg hover:shadow-lg">
+                Gerar Sugestão Rápida de Uso
+            </button>
+            <p id="suggestionOutput" class="mt-6 text-xl text-gray-700 font-medium"></p>
+        </section>
+
+    </main>
+
+    <footer class="bg-cupuacu text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <!-- INCLUSÃO DA COOPERATIVA NO RODAPÉ --><p>&copy; 2025 AMAZOCUPU. O sabor da Amazônia no seu dia.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('recipeButton');
+            const output = document.getElementById('suggestionOutput');
+            const suggestions = [
+                "Que tal um Sorvete Cremoso de Cupuaçu? É o clássico mais refrescante!",
+                "Experimente um Suco de Cupuaçu com leite condensado. Uma delícia tropical!",
+                "Use a polpa em um Mousse de Cupuaçu para uma sobremesa leve e azedinha.",
+                "Adicione um pouco de Cupuaçu no seu smoothie matinal para um toque amazônico.",
+                "Procure pela Manteiga de Cupuaçu para cuidar da sua pele e cabelos!"
+            ];
+
+            button.addEventListener('click', () => {
+                // Seleciona uma sugestão aleatória
+                const randomIndex = Math.floor(Math.random() * suggestions.length);
+                output.textContent = suggestions[randomIndex];
+            });
+        });
+    </script>
+</body>
+</html>
